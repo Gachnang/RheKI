@@ -1,0 +1,137 @@
+\documentclass[11pt,titlepage]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{framed}
+\usepackage{quoting}
+\usepackage{lscape}
+\usepackage[table]{xcolor}
+\usepackage{pdfpages}
+% remove current style and use fancyplain
+\pagestyle{fancyplain}
+\fancyhf{}
+% remove rule/lines as well
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% set papersize, magin and footersize
+\geometry{a4paper,portrait,left={3cm},right={3cm},top={2cm},bottom={1cm},includefoot,foot={1cm}}
+% set footer
+\rfoot{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
+% define some colors
+\definecolor{lightgray}{rgb}{.95,.95,.95}
+\definecolor{shadecolor}{rgb}{.95,.95,.95}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+% set color and font of ''\url''
+\renewcommand\UrlFont{\color{blue}\rmfamily\itshape}
+% colorbox which can wrap lines
+\newcommand\code[1]{\codehelp#1 \relax\relax}
+\def\codehelp#1 #2\relax{\allowbreak\grayspace\codecolor{#1}\ifx\relax#2\else
+ \codehelp#2\relax\fi}
+\newcommand\codecolor[1]{\colorbox{lightgray}{\textcolor{black}{%
+  \ttfamily\mystrut\smash{\detokenize{#1}}}}}
+\def\mystrut{\rule[\dimexpr-\dp\strutbox+\fboxsep]{0pt}{%
+ \dimexpr\normalbaselineskip-2\fboxsep}}
+\def\grayspace{\hspace{0pt minus \fboxsep}}
+% add ''\code'' to highligth single code lines
+%\newcommand{\code}[1]{\wrapcolorbox[lightgray]{\ttfamily{#1}}}
+
+% add ''\shadedquotation'' to highligth quoates
+\newenvironment{shadedquotation}
+ {\begin{shaded*}
+  \quoting[leftmargin=0pt, vskip=0pt]
+ }
+ {\endquoting
+ \end{shaded*}
+}
+
+% set title
+\title{Smart Factory}
+\author{Kevin Stahel und Markus Gachnang}
+\date{\today{}}
+% set parindent to 0px to remove it (Einrücken von neuer Absatz)
+\setlength\parindent{0pt}
+% ---------------------------------------------------------------------------
+% begin Document
+\begin{document}
+% set font
+\sffamily
+% print title
+\maketitle
+\newpage
+% print index
+\tableofcontents{}
+\setcounter{page}{1}
+\newpage
+% linksbündig
+\RaggedRight
+% kein brechen von Wörtern
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\section{Brainstorm}
+\label{sec:Brainstorm}
+  \url{https://refa.de/service/refa-lexikon/smart-factory}
+  \begin{itemize}
+    \item bezeichnet eine Produktionsumgebung, die sich selbst organisiert (Mensch muss in den Produktionsprozess nicht mehr eingreifen)
+    \item Basis solcher intelligenten Fabriken sind sogenannte Cyber Physical Systems (CPS)
+    \item CPS sind Systeme, bei denen informations- und softwaretechnische Komponenten mit mechanischen bzw. elektronischen Komponenten verbunden werden. 
+  \end{itemize}
+
+
+  \url{https://www.bimos.com/B/ch-de/news/3014/smart-factory---die-zukunftsvision-der-industrie-40}
+  \begin{itemize}
+    \item Die intelligente Fabrik, die sich selbst organisiert
+    \item schlanke und optimierte Prozesse
+    \item kürzere Produktionszeiten
+    \item Produktion von Individualprodukten zu Preisen von Massenprodukten
+    \item Steigerung der Produktivität
+    \item automatisierte, effiziente Bestellprozesse
+    \item geringerer Personalaufwand in der Produktion
+    \item höhere Flexibilität in der Produktion
+    \item kürzere Markteinführungszeiten für neue Produkte
+    \item schnelle Anpassung an neue oder veränderte Produktanforderungen
+    \item agile Reaktion des Produktionsprozesses auf Schwankungen im Marktbedarf
+  \end{itemize}
+
+  \url{https://www.sciencedirect.com/science/article/pii/S2351978918306577}
+  \begin{itemize}
+    \item South Korean and Swedish examples on manufacturing settings
+    \item Since the field of Smart Manufacturing is still in a rather immature phase, there are no fully established
+    definitions. However, one example of definition of Smart Manufacturing could be: “a (fully)-integrated and
+    collaborative manufacturing system that responds in real time to meet the changing demands and conditions in the
+    factory, supply network, and customer needs”
+  \end{itemize}
+
+
+  \subsection{Examples}
+  \label{sec:Brainstorm_Examples}
+
+  Spiele, bei denen man ''Smart Factories'' macht:
+  \begin{itemize}
+    \item Satisfactory 
+    \item Factorio
+  \end{itemize}
+
+
+Platinen löten / bestücken
+
+\section{Kommentierte Quellenliste}
+\label{sec:KommentierteQuellenliste}
+  
+\end{document}
