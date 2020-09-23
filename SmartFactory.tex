@@ -143,9 +143,11 @@ Wie erwähnt in \cite{RICHARDS.2020}
 \label{sec:KommentierteQuellenliste}
   
 \begingroup
-% Remove Title "Literature"
+% Remove Titles eg "Literatur"
 \renewcommand{\section}[2]{}%
-\bibliography{citavi}
+% Reminder: Recreate "SmartFactory.bll" when "citavi/citavi.bib" gets changed => run BibTeX ([F11] in TexMaker)
+\bibliography{citavi/citavi}
+% Use the "IEEE standard" as style => "IEEEtran.bst"
 \bibliographystyle{IEEEtran}
 \endgroup  
   
