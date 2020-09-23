@@ -21,6 +21,10 @@
 \usepackage{lscape}
 \usepackage[table]{xcolor}
 \usepackage{pdfpages}
+% Bibliographie
+\usepackage{cite}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 % remove current style and use fancyplain
 \pagestyle{fancyplain}
 \fancyhf{}
@@ -113,9 +117,9 @@
   \begin{itemize}
     \item South Korean and Swedish examples on manufacturing settings
     \item Since the field of Smart Manufacturing is still in a rather immature phase, there are no fully established
-    definitions. However, one example of definition of Smart Manufacturing could be: “a (fully)-integrated and
+    definitions. However, one example of definition of Smart Manufacturing could be: ''a (fully)-integrated and
     collaborative manufacturing system that responds in real time to meet the changing demands and conditions in the
-    factory, supply network, and customer needs”
+    factory, supply network, and customer needs.''
   \end{itemize}
 
 
@@ -131,7 +135,19 @@
 
 Platinen löten / bestücken
 
+Wie erwähnt in \cite{RICHARDS.2020}
+
+\pagebreak
+
 \section{Kommentierte Quellenliste}
 \label{sec:KommentierteQuellenliste}
   
+\begingroup
+% Remove Title "Literature"
+\renewcommand{\section}[2]{}%
+\bibliography{citavi}
+\bibliographystyle{IEEEtran}
+\endgroup  
+  
+
 \end{document}
