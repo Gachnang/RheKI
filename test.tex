@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+% Set title
+\def\Title{Smart Factory}
+\title{\Title}
+\def\Author{Kevin Stahel und Markus Gachnang}
+\author{\Author}
+\def\Subject{Sind ''Smart Factories'' bereits Realität \\ oder nur ein Konzept auf Papier?}
+\date{\today{}}
+
+\usepackage{hyperref}
+\hypersetup{
+	linktoc=all,
+    pdftitle={\Title},
+    pdfsubject={\Subject},
+    pdfauthor={\Author}
+}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+% geometry
+\usepackage{geometry}
+\geometry{a4paper,portrait,left={3cm},right={3cm},top={2cm},bottom={2cm},includehead,head={0.1\textwidth}}
+% Colors
+\definecolor{LightGray}{rgb}{.96,.92,.90}
+\definecolor{Gray}{rgb}{0.79, 0.75, 0.73}
+\definecolor{DarkGray}{rgb}{.46,.42,.40}
+\definecolor{DarkestGray}{rgb}{.31,.28,.26}
+% fancyhdr
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{}
+% set header/footer
+\lhead{\includegraphics[width=0.2\textwidth]{ost}}
+\chead{\textbf{\Title}\\\Author}
+\rhead{\small\thepage\hspace{2pt}/\hspace{2pt}\pageref{LastPage}}
+% Bibliographie
+\usepackage{cite}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+% This document uses 'limap'. Inforamtion are available at https://www.ctan.org/pkg/limap
+\usepackage[german]{limap}
+\usepackage{color}
+% The macro \MapBlockLabelFont determines the font changing command to be used for typesetting the block label. The default is empty.
+\renewcommand\MapBlockLabelFont{\color{DarkestGray}}
+% The macro \MapParskip determines the vertical distance of the text from the separating rules. The default is 2ex.
+\renewcommand\MapParskip{1ex}
+% The macro \MapTitleFraction determines the part of the page width devoted to the block label area. It is a fraction in the range from 0 to 1. The default value of \MapTitleFraction is 0.2.
+\renewcommand\MapTitleFraction{.2}
+% This macro determines the part of the page width devoted to the text area. It is a fraction in the range from 0 to 1. The default value of \MapTextFraction is 0.75.
+% \MapTitleFraction and \MapTextFraction should add up to something less or equal to 1. Otherwise you will get some “overfull hbox” messages.
+\renewcommand\MapTextFraction{.8}
+% The macro \MapRuleWidth determines the width of the rules drawn between blocks. It is defined as a macro containig a length. The default is 1pt.
+% It can even be set to 0pt to suppress the lines at all
+\renewcommand\MapRuleWidth{1pt}
+% The macro \MapRuleStart can for instance be used to achieve colored rules. For this purpose we can include the package xcolor in the preamble and select a named color for the rule. 
+\renewcommand\MapRuleStart{\color{Gray}}
+% The macro \MapTitleFont determines the font changing command to be used when typesetting the title of a map. The default is \Large.
+\renewcommand\MapTitleFont{\Large\bfseries}
+\renewcommand\MapFont{\normalsize}
+% This macro determines the font changing command to be used for typesetting the additional text after titles on followup pages of multi-page maps. The default value is \small.
+\renewcommand\MapTitleContinuedFont{\normalsize}
+\renewcommand\MapContinued{Fortsetzung}
+% Every block in TOC
+\def\MapBlockStartHook{}
+%\set\MapBlockStartHook\MapBlockTOC
+\usepackage{titlesec}
+\begin{document}
+% print title
+\begin{titlepage}
+  \begin{center}
+    \Huge\textbf{\Title}
+    \par\bigskip\bigskip
+    \large\Subject
+    \normalsize
+    \par\bigskip\bigskip
+  \begin{tabular}{p{3cm} p{6cm}}
+    \textcolor{DarkestGray}{Autoren} & \Author \\
+  \end{tabular}
+  \end{center}
+\end{titlepage}
+% print index
+\begingroup
+% Section
+\titleformat
+{\section} % command
+[display] % shape
+{\MapTitleFont} % format
+{\thesection.} % label
+{\MapParskip} % sep
+{} % before-code
+[\MapTitleContinuedFont] % after-code
+  \setcounter{page}{1}
+  \tableofcontents{}
+\endgroup
+\newpage
+\begin{Map}{Abstract}
+\label{map:Abstract}
+\Block{Contens}
+\label{blck:Contens}
+And some wise words about the table of contents.
+\Block{Block Label}
+\label{blck:BlockLabel}
+And now comes the block text. It can consist of one or more classical paragraphs, or tables, or pictures, or something else.
+\lipsum[3-4]
+
+\Block{Block Label With loooooong text}
+\label{blck:BlockLabelLong}
+\lipsum[2-4]
+\Block{Block Label on next page}
+\label{blck:BlockLabelNextPage}
+\lipsum[2-4]
+\begin{Map}{TestSubMap}
+\Block{Test}
+\end{Map}
+\end{Map}
+
+\begin{Map}{Quellenverweis}
+\label{map:Quellenverweis}
+\begingroup
+% Remove Titles eg "Literatur"
+\renewcommand{\section}[2]{}%
+% Reminder: Recreate "SmartFactory.bll" when "citavi/citavi.bib" gets changed => run BibTeX ([F11] in TexMaker)
+\bibliography{citavi/citavi}
+% Use the "IEEE standard" as style => "IEEEtran.bst"
+\bibliographystyle{IEEEtran}
+\endgroup
+\end{Map}
+\end{document}
