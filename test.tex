@@ -22,7 +22,7 @@
 \usepackage{lipsum}
 % geometry
 \usepackage{geometry}
-\geometry{a4paper,portrait,left={3cm},right={3cm},top={2cm},bottom={2cm},includehead,head={0.1\textwidth}}
+\geometry{a4paper,portrait,left={3cm},right={3cm},top={2cm},bottom={2cm},includehead,head={0.11\textwidth}}
 % Colors
 \definecolor{LightGray}{rgb}{.96,.92,.90}
 \definecolor{Gray}{rgb}{0.79, 0.75, 0.73}
@@ -64,7 +64,7 @@
 \renewcommand\MapTitleContinuedFont{\normalsize}
 \renewcommand\MapContinued{Fortsetzung}
 % Every block in TOC
-\def\MapBlockStartHook{}
+%\def\MapBlockStartHook{}
 %\set\MapBlockStartHook\MapBlockTOC
 \usepackage{titlesec}
 \begin{document}
@@ -97,20 +97,15 @@
 \endgroup
 \newpage
 \begin{Map}{Abstract}
-\label{map:Abstract}
 \Block{Contens}
-\label{blck:Contens}
 And some wise words about the table of contents.
 \Block{Block Label}
-\label{blck:BlockLabel}
 And now comes the block text. It can consist of one or more classical paragraphs, or tables, or pictures, or something else.
-\lipsum[3-4]
+\lipsum[3-3]
 
 \Block{Block Label With loooooong text}
-\label{blck:BlockLabelLong}
 \lipsum[2-4]
 \Block{Block Label on next page}
-\label{blck:BlockLabelNextPage}
 \lipsum[2-4]
 \begin{Map}{TestSubMap}
 \Block{Test}
@@ -118,7 +113,6 @@ And now comes the block text. It can consist of one or more classical paragraphs
 \end{Map}
 
 \begin{Map}{Quellenverweis}
-\label{map:Quellenverweis}
 \begingroup
 % Remove Titles eg "Literatur"
 \renewcommand{\section}[2]{}%
