@@ -9,7 +9,8 @@
 \def\Subject{Sind ''Smart Factories'' bereits Realität \\ oder nur ein Konzept auf Papier?}
 \date{\today{}}
 
-\usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\def\UrlBreaks{\do\/\do-}
 \hypersetup{
 	linktoc=all,
     pdftitle={\Title},
@@ -19,6 +20,7 @@
 \usepackage{lastpage}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{booktabs}
 \usepackage{lipsum}
 % geometry
 \usepackage{geometry}
@@ -97,22 +99,35 @@
 \endgroup
 \newpage
 \begin{Map}{Abstract}
-\Block{Contens}
-And some wise words about the table of contents.
-\Block{Block Label}
-And now comes the block text. It can consist of one or more classical paragraphs, or tables, or pictures, or something else.
-\lipsum[3-3]
-
-\Block{Block Label With loooooong text}
-\lipsum[2-4]
-\Block{Block Label on next page}
-\lipsum[2-4]
-\begin{Map}{TestSubMap}
-\Block{Test}
+\Block{Definition}
+Der Begriff ''Smart Factory'' kommt von der Hightech-Strategie der deutschen Bundesregierung als Teil des Zukunftsprojekts ''Industrie 4.0''.
+\Block{Fragestellung}
+Den Begriff von ''Smart Factory'' gibt es schon seit 2014, aber gibt es auch Fertigungsanlagen, die der Definition gerecht werden?
+Wir versuchen, eine genaue Definition zu erarbeiten, welche unterscheidet, ob es sich bei der Fertigungsanlage auch um eine ''Smart Factory'' handelt. 
 \end{Map}
-\end{Map}
-
 \begin{Map}{Quellenverweis}
+\Block{Kommentierte Quellenliste}
+\WideBlock{
+\begin{tabular}{p{0.2cm}p{4.4cm}p{2cm}p{3cm}p{3cm}}\toprule
+   & Quelle & Art & Inhalt & Eignung \\\midrule
+   
+ 1 & 
+ \url{https://www.plattform-i40.de/PI40/Navigation/DE/Industrie40/WasIndustrie40/was-ist-industrie-40.html} &
+ Internet-Dokument / Filmdokument &
+ Definition von ''Industrie 4.0'' vom Bundesministerium für Bildung und Forschung von Deutschland &
+ Gibt einen Überblick von ''Industrie 4.0'' und den Zusammenhang zu ''Smart Factory''\\\midrule
+ 
+ 2& Q & A & I & E\\\midrule
+ 3& Q & A & I & E\\\midrule
+ 4& Q & A & I & E\\\midrule
+ 5& Q & A & I & E\\\midrule
+ 6& Q & A & I & E\\\midrule
+ 7& Q & A & I & E\\\midrule
+ 8& Q & A & I & E\\\midrule
+ 9& Q & A & I & E\\\midrule
+10& Q & A & I & E\\\bottomrule
+\end{tabular}}
+\Block{Verwendete Verweise}
 \begingroup
 % Remove Titles eg "Literatur"
 \renewcommand{\section}[2]{}%
