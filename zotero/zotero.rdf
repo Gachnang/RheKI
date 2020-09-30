@@ -1,0 +1,185 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:dcterms="http://purl.org/dc/terms/">
+    <bib:Book rdf:about="urn:isbn:978-1-78966-085-2">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                        <vcard:locality>[Place of publication not identified]</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>KOGAN PAGE</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>RICHARDS</foaf:surname>
+                        <foaf:givenName>GWYNNE</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grinsted</foaf:surname>
+                        <foaf:givenName>Susan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>The logistics and supply chain toolkit: Over 100 tools for tansport, warehousing and inventory manageme</dc:title>
+        <dc:date>2020</dc:date>
+        <dc:identifier>ISBN 978-1-78966-085-2</dc:identifier>
+        <prism:edition>Third edition</prism:edition>
+    </bib:Book>
+    <bib:Book rdf:about="https://innovators-guide.ch/2017/05/eroffnungsfeier-swiss-smart-factory-die-erste-schweizer-test-und-demo-fabrik-zum-thema-industrie-40/">
+        <z:itemType>book</z:itemType>
+        <dc:title>Eröffnungsfeier Swiss Smart Factory – die erste Schweizer Test- und Demo-Fabrik zum Thema Industrie 4.0 – Innovator's Guide Switzerland</dc:title>
+        <dc:date>29.09.2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://innovators-guide.ch/2017/05/eroffnungsfeier-swiss-smart-factory-die-erste-schweizer-test-und-demo-fabrik-zum-thema-industrie-40/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Book>
+    <bib:Book rdf:about="https://www.plattform-i40.de/PI40/Navigation/DE/Industrie40/WasIndustrie40/was-ist-industrie-40.html;jsessionid=D7ED4118DED525F176F382A8F939369D">
+        <z:itemType>book</z:itemType>
+        <dc:title>Was ist Industrie 4.0?</dc:title>
+        <dc:date>29.09.2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.plattform-i40.de/PI40/Navigation/DE/Industrie40/WasIndustrie40/was-ist-industrie-40.html;jsessionid=D7ED4118DED525F176F382A8F939369D</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Book>
+    <bib:Book rdf:about="https://www.marketsandmarkets.com/Market-Reports/smart-manufacturing-market-105448439.html">
+        <z:itemType>book</z:itemType>
+        <dc:title>Smart Manufacturing Market by Enabling Technology, Information Technology, Industry, and Region | COVID-19 Impact Analysis | MarketsandMarkets™</dc:title>
+        <dc:date>29.09.2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.marketsandmarkets.com/Market-Reports/smart-manufacturing-market-105448439.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Book>
+    <bib:Book rdf:about="https://www.bmbf.de/de/zukunftsprojekt-industrie-4-0-848.html">
+        <z:itemType>book</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>BMBF-Internetredaktion</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Industrie 4.0 - BMBF</dc:title>
+        <dcterms:abstract>Industrie 4.0</dcterms:abstract>
+        <dc:date>2018</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.bmbf.de/de/zukunftsprojekt-industrie-4-0-848.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Book>
+    <bib:Article rdf:about="https://entwickler.de/online/iot/industrie-4-0-auf-dem-weg-zur-smart-factory-579911790.html">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <dc:title>entwickler.de - S&amp;S Media Support GmbH</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Huhmann</foaf:surname>
+                        <foaf:givenName>Andreas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Industrie 4.0: Auf dem Weg zur wirklich smarten Factory</dc:title>
+        <dcterms:abstract>Die Zielsetzung der Smart Factory ist im Grunde die Herstellung hoch kreativer Einzelkunstwerke – in industrieller Fertigung. Wie sieht der Weg dorthin aus?</dcterms:abstract>
+        <dc:date>29.10.2019</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://entwickler.de/online/iot/industrie-4-0-auf-dem-weg-zur-smart-factory-579911790.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <bib:Article rdf:about="https://morethandigital.info/in-5-schritten-zum-smart-manufacturing/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>MoreThanDigital</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Limited, Wipro</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>In 5 Schritten zum Smart Manufacturing | MoreThanDigital</dc:title>
+        <dcterms:abstract>Um den Erfolg von Smart Manufacturing sicherzustellen, sollten Unternehmen der Fertigungsindustrie ihr Hauptaugenmerk auf fünf Schlüsselbereiche legen.</dcterms:abstract>
+        <dc:date>11.09.2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://morethandigital.info/in-5-schritten-zum-smart-manufacturing/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Article>
+    <bib:Book rdf:about="#item_8">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                        <vcard:locality>[Place of publication not identified]</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>KOGAN PAGE</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>RICHARDS</foaf:surname>
+                        <foaf:givenName>GWYNNE</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Grinsted</foaf:surname>
+                        <foaf:givenName>Susan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>The logistics and supply chain toolkit: Over 100 tools for tansport, warehousing and inventory manageme</dc:title>
+        <dc:date>2020</dc:date>
+        <dc:identifier>ISBN 978-1-78966-085-2</dc:identifier>
+        <prism:edition>Third edition</prism:edition>
+    </bib:Book>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>SmartFactory</dc:title>
+        <dcterms:hasPart rdf:resource="https://innovators-guide.ch/2017/05/eroffnungsfeier-swiss-smart-factory-die-erste-schweizer-test-und-demo-fabrik-zum-thema-industrie-40/"/>
+        <dcterms:hasPart rdf:resource="https://www.plattform-i40.de/PI40/Navigation/DE/Industrie40/WasIndustrie40/was-ist-industrie-40.html;jsessionid=D7ED4118DED525F176F382A8F939369D"/>
+        <dcterms:hasPart rdf:resource="https://www.marketsandmarkets.com/Market-Reports/smart-manufacturing-market-105448439.html"/>
+        <dcterms:hasPart rdf:resource="https://www.bmbf.de/de/zukunftsprojekt-industrie-4-0-848.html"/>
+        <dcterms:hasPart rdf:resource="https://entwickler.de/online/iot/industrie-4-0-auf-dem-weg-zur-smart-factory-579911790.html"/>
+        <dcterms:hasPart rdf:resource="https://morethandigital.info/in-5-schritten-zum-smart-manufacturing/"/>
+        <dcterms:hasPart rdf:resource="#item_8"/>
+    </z:Collection>
+</rdf:RDF>
