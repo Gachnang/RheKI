@@ -25,7 +25,7 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{booktabs}
-\usepackage{lipsum}
+\usepackage{calc}
 % geometry
 \usepackage{geometry}
 \geometry{a4paper,portrait,left={3cm},right={3cm},top={2cm},bottom={2cm},includehead,head={0.11\textwidth}}
@@ -87,10 +87,16 @@
     \normalsize
     \par\bigskip\bigskip
   \begin{tabular}{p{3cm} p{6cm}}
-    \textcolor{DarkestGray}{Autoren} & \Author \\
+    \textcolor{DarkestGray}{Autoren} & \Author\medskip\\
+    \textcolor{DarkestGray}{Im Auftrag} & Rhetorische Kommunikation für IngenieurInnen (RheKI), Rolf Murbach\par\includegraphics[width=0.3\textwidth]{ost}\medskip\\
+    \textcolor{DarkestGray}{Datum} & \today\medskip\\
   \end{tabular}
-  \end{center}
+\end{center}
+\par\bigskip\bigskip
+  \def\svgscale{0.9}
+  \input{TitleImage.pdf_tex}
 \end{titlepage}
+
 % print index
 \begingroup
 % Section
@@ -105,7 +111,7 @@
   \setcounter{page}{1}
   \tableofcontents{}
 \endgroup
-\newpage
+%\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{Map}{Abstract}
@@ -246,7 +252,7 @@ Beschreibt die Eröffnung einer swissmade Smart Factory Demo-Fabrik &
 \end{tabular}}
 \medskip
 \Block{Verwendete Verweise}
-Dieser Bereich wird mit Quellen gefüllt von Referenzen aus dem verfassten Text. Da noch kein Text verfasst wurde, ist er au noch leer...
+Dieser Bereich beschreibt Quellen und Referenzen aus dem verfassten Text.
 
 \begingroup
 % Remove Titles eg "Literatur"
